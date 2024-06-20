@@ -65,7 +65,10 @@ public class Bfs{
     ArrayList<Edge> graph[] = new ArrayList[V];
     creatingAGraphs(graph);
     int SP = 0; //Choosing a starting point
-
+ // If we have diconnected components, we write something like below
+    // for(int i=0; i<V; i++){
+    //if(vis[i] == false)}//make it a starting point
+    //bfs(graph,V, vis, i)
     breadfirstsearch(graph, V, SP);
     
     }
